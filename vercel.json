@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "JARVIS.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "JARVIS.py"
+        }
+    ],
+    "env": {
+        "PYTHONPATH": ".",
+        "FLASK_ENV": "production"
+    }
+} 
